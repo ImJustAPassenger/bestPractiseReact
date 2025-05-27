@@ -7,14 +7,11 @@ function App() {
       <section>
         <h1>React Patterns & Practices</h1>
         <Accordion className="accordion">
-          <Accordion.Item className="accordion-item">
-            <Accordion.Title className="accordion-item-title" id="experience">
+          <Accordion.Item id="experience" className="accordion-item" >
+            <Accordion.Title className="accordion-item-title">
               we got 20 year of experience
             </Accordion.Title>
-            <Accordion.Content
-              className="accordion-item-content"
-              id="experience"
-            >
+            <Accordion.Content className="accordion-item-content">
               <article>
                 <p>You can&apos;t go wrong with us.</p>
                 <p>
@@ -24,15 +21,12 @@ function App() {
               </article>
             </Accordion.Content>
           </Accordion.Item>
-          <Accordion.Item className="accordion-item">
-            <Accordion.Title id="local-guides" className="accordion-item-title">
+          <Accordion.Item id="local-guides" className="accordion-item">
+            <Accordion.Title className="accordion-item-title">
               we are working with local guides
             </Accordion.Title>
 
-            <Accordion.Content
-              className="accordion-item-content"
-              id="local-guides"
-            >
+            <Accordion.Content className="accordion-item-content">
               <article>
                 <p>We are not doing this along from our office</p>
                 <p>
