@@ -1,5 +1,5 @@
 import Accordion from "./components/Accordion/Accordion";
-import AccordionItem from "./components/AccordionItem";
+import AccordionItem from "./components/Accordion/AccordionItem";
 
 function App() {
   return (
@@ -7,22 +7,45 @@ function App() {
       <section>
         <h1>React Patterns & Practices</h1>
         <Accordion className="accordion">
-         <AccordionItem id="experience" className="accordion-item" title="we got 20 year of experience">
-          <article>
-            <p>You can&apos;t go wrong with us.</p>
-            <p>We are in the business of planning highly individualizade vacation trips for more than 20 years</p>
-          </article>
-         </AccordionItem>
-            <AccordionItem id="local-guides" className="accordion-item" title="we are working with local guides">
-          <article>
-            <p>We are not doing this along from our office</p>
-            <p>Instead, we are working with local guides to ensure a safe and pleasant vacantion</p>
-          </article>
-         </AccordionItem>
+          <Accordion.Item className="accordion-item">
+            <Accordion.Title className="accordion-item-title" id="experience">
+              we got 20 year of experience
+            </Accordion.Title>
+            <Accordion.Content
+              className="accordion-item-content"
+              id="experience"
+            >
+              <article>
+                <p>You can&apos;t go wrong with us.</p>
+                <p>
+                  We are in the business of planning highly individualizade
+                  vacation trips for more than 20 years
+                </p>
+              </article>
+            </Accordion.Content>
+          </Accordion.Item>
+          <Accordion.Item className="accordion-item">
+            <Accordion.Title id="local-guides" className="accordion-item-title">
+              we are working with local guides
+            </Accordion.Title>
+
+            <Accordion.Content
+              className="accordion-item-content"
+              id="local-guides"
+            >
+              <article>
+                <p>We are not doing this along from our office</p>
+                <p>
+                  Instead, we are working with local guides to ensure a safe and
+                  pleasant vacantion
+                </p>
+              </article>
+            </Accordion.Content>
+          </Accordion.Item>
         </Accordion>
       </section>
     </main>
-  )
+  );
 }
 
 export default App;
